@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_no_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/loading_no_more"
+            android:textColor="@color/c10"
+            android:textSize="@dimen/ts_14px"
+            android:visibility="gone"
+            tools:ignore="SpUsage"/>
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:background="@null"
+            android:src="@drawable/splash_dot"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:src="@drawable/splash_dot"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:background="@null"
+            android:src="@drawable/splash_dot"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</LinearLayout>
